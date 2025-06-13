@@ -1,4 +1,6 @@
 import './index.css';
+import Hero from './Hero';
+import About from './About';
 
 function Nav() {
   return (
@@ -19,34 +21,6 @@ function Nav() {
   );
 }
 
-function Hero() {
-  return (
-    <section id="hero" className="h-screen flex flex-col items-center justify-center text-center bg-grayLight px-4">
-      <h1 className="text-4xl md:text-6xl font-bold mb-6 text-black font-sans">Transformamos actores en leyendas de acción</h1>
-      <p className="text-grayMedium mb-8 max-w-xl">Aprende con fuego. Entrena con alma. Actúa con verdad.</p>
-      <div className="flex flex-col sm:flex-row gap-4">
-        <a href="#contact" className="bg-gold text-black px-6 py-3 rounded-full font-semibold">Solicita plaza</a>
-        <a href="#gallery" className="border border-gold text-black px-6 py-3 rounded-full font-semibold">Ver en acción</a>
-      </div>
-    </section>
-  );
-}
-
-function About() {
-  return (
-    <section id="about" className="py-20 bg-white px-4">
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 items-center">
-        <img className="rounded-lg" src="https://images.unsplash.com/photo-1605786520117-068b5a371720?q=80&w=1974&auto=format&fit=crop" alt="Mónica de la Nuez" />
-        <div>
-          <h2 className="text-3xl font-bold mb-4 text-black">Sobre CATS Production: Donde lo real no se improvisa.</h2>
-          <p className="mb-4 text-grayMedium">En CATS Production, liderados por Mónica de la Nuez, convertimos talento en impacto visual...</p>
-          <p className="font-semibold mb-4 text-gold">Nací como policía. Renací como actriz. Hoy, formo guerreros de la interpretación.</p>
-          <p className="text-grayMedium">Mónica de la Nuez, ex-policía nacional, actriz y entrenadora, ha vivido la acción en carne propia.</p>
-        </div>
-      </div>
-    </section>
-  );
-}
 
 function Card({title, desc, img}:{title:string; desc:string; img:string}) {
   return (
