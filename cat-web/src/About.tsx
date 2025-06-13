@@ -3,7 +3,7 @@ const About = () => {
     <section className="flex flex-col md:flex-row items-center gap-8 py-16 px-6 bg-black text-white">
       <div className="md:w-1/2">
         <img
-          src="/about.jpg"
+          src="/cat-web/about.jpg"
           alt="Mónica de la Nuez"
           className="w-full h-auto rounded-lg shadow-lg object-cover"
         />
